@@ -94,7 +94,7 @@ box.draw = function(context){
 	context.fillStyle = box.color;
 	context.fillRect(box.x, box.y, box.width, box.height);
 	if (box.x > target.x - box.width && box.x <= target.x + target.width && box.y > target.y - box.height && box.y <= target.y + target.height){
-		box.width += 50;
+		box.speed += .5;
 	}
 };
 
